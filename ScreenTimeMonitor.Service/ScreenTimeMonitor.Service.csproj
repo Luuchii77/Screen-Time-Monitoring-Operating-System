@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>false</SelfContained>
+    <PublishSingleFile>false</PublishSingleFile>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <Version>1.0.0</Version>
+    <Authors>Your Name</Authors>
+    <Description>Screen Time Monitor - Windows Service Application</Description>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <!-- NuGet Package References -->
+  <ItemGroup>
+    <!-- PostgreSQL Support -->
+    <PackageReference Include="Npgsql" Version="8.0.0" />
+    
+    <!-- SQLite Support (Fallback) -->
+    <PackageReference Include="System.Data.SQLite" Version="1.0.118" />
+    
+    <!-- Data Access - Dapper ORM -->
+    <PackageReference Include="Dapper" Version="2.0.151" />
+    
+    <!-- Dependency Injection & Logging -->
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="8.0.0" />
+    
+    <!-- WMI for System Information -->
+    <PackageReference Include="System.Management" Version="8.0.0" />
+    
+    <!-- Performance Monitoring -->
+    <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="8.0.0" />
+  </ItemGroup>
+
+</Project>

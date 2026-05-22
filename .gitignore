@@ -1,0 +1,82 @@
+# ==============================================
+# Build Outputs & Artifacts
+# ==============================================
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.so
+*.dylib
+*.o
+*.a
+*.lib
+
+# ==============================================
+# IDE & Editor
+# ==============================================
+.vs/
+.vscode/
+*.user
+*.suo
+*.sln.docstates
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ==============================================
+# Runtime Data (Generated at Startup)
+# ==============================================
+# Database file - will be created on first run
+data/
+screentime_monitor.db
+screentime_monitor.db-shm
+screentime_monitor.db-wal
+
+# Logs - will be created on first run
+logs/
+
+# ==============================================
+# NuGet & Package Management
+# ==============================================
+.nuget/
+packages/
+*.nupkg
+*.snupkg
+
+# ==============================================
+# Testing
+# ==============================================
+TestResults/
+*.trx
+coverage/
+.coverage
+
+# ==============================================
+# Temporary Files
+# ==============================================
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+
+# ==============================================
+# OS-Specific
+# ==============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# ==============================================
+# Visual Studio Cache
+# ==============================================
+.vs/
+.vscode/settings.json
+.vscode/launch.json
